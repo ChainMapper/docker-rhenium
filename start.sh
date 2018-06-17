@@ -8,18 +8,18 @@ Docker: https://hub.docker.com/r/joshendriks/
 BTC: 1NCZgpMMoNwL6ZeFsEQ2kRZEzzzTd5TuGk
 XRH: REBnMEH2KqXqWthCvTEr81e7qiVNcSLAjk"
 
-config="/config/lobstex.conf"
+config="/config/Rhenium.conf"
 if [ -f "$config" ]
 then
     echo "Using $config"
-    cp $config /data/.lobstex/lobstex.conf
+    cp $config /data/.Rhenium/Rhenium.conf
 fi
 
 wallet="/config/wallet.dat"
 if [ -f "$wallet" ]
 then
     echo "Using $wallet"
-    cp $wallet /data/.lobstex/wallet.dat
+    cp $wallet /data/.Rhenium/wallet.dat
 fi
 
 echo "Starting XRH daemon..."
